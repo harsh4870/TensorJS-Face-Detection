@@ -5,6 +5,15 @@ Face landmark detection TensorJS with Integrated WASM & comparison with Webgl, C
 
 [Clik & Visit Link](https://storage.googleapis.com/cnd-wasm-tensorjs/index.html)
 
+### Quick run http-server
+
+Install `http-server`
+
+```
+npm install --global http-server
+```
+
+Run `http-server` & Open browser `localhost:8080`
 
 ### DIY General Quick Demo
 ARM 
