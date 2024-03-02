@@ -1,0 +1,66 @@
+<style>
+  body {
+    margin: 25px;
+  }
+
+  .true {
+    color: green;
+  }
+
+  .false {
+    color: red;
+  }
+
+  #main {
+    position: relative;
+    margin: 50px 0;
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #description {
+    margin-top: 20px;
+    width: 600px;
+  }
+
+  #description-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
+
+<body>
+  <div id="main">
+    <video id="video" playsinline style="
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      width: auto;
+      height: auto;
+      ">
+    </video>
+    <canvas id="output"></canvas>
+    <video id="video" playsinline style="
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      visibility: hidden;
+      width: auto;
+      height: auto;
+      ">
+    </video>
+  </div>
+</body>
+<script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+<script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+<script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+<script src="https://unpkg.com/@tensorflow/tfjs-backend-cpu@2.1.0/dist/tf-backend-cpu.js"></script>
+<script src="./tf-backend-wasm.js"></script>
+
+<script src="https://unpkg.com/@tensorflow-models/blazeface@0.0.5/dist/blazeface.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+<script src="./index.js"></script>
